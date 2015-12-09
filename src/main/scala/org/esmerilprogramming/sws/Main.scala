@@ -15,6 +15,6 @@ object Main extends App {
   val deployment = ShrinkWrap.create(classOf[JAXRSArchive], "scala-wildfly-swarm.war")
   deployment.addClass(classOf[ScalaResource])
   deployment.addAllDependencies()
-  //container.start().deploy(deployment);
+  container.start().deploy(deployment)
 
 }

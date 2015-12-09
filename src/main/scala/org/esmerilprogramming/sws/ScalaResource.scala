@@ -10,7 +10,7 @@ import javax.ws.rs.{Path, GET}
 class ScalaResource {
 
   @GET
-  def get() {
+  def get() = {
     "Hail at " + new Date()
   }
 }
